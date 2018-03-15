@@ -7,17 +7,23 @@
     margin-top: 0.16rem;
 }
 .formBox .suBtn{
-    margin-top: 2rem;
+    margin-top: 0.4rem;
 }
 .formBox .btn-set{
     padding: 0.12rem 0.48rem;
 }
 .formBox .album{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.formBox .album div{
+    margin: 0.05rem;
 }
 .formBox .album img{
     width: 2rem;
     height: 2rem;
+
 }
 #files_upload{
     text-align: center;
