@@ -1,0 +1,14 @@
+@charset "utf-8";
+.formBox{
+    margin: 80px auto 20px;
+    width: calc(100% - 80px);
+}
+.formBox label{
+    margin-top: 16px;
+}
+.formBox .suBtn{
+    margin-top: 320px;
+}
+.formBox .btn-set{
+    padding: 12px 48px;
+}
