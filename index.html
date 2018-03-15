@@ -14,8 +14,6 @@
     <script src="jquery.min.js" type="text/javascript"></script>
     <script src="bootstrap.min.js" type="text/javascript"></script>
     <script src="cslCamera.js" type="text/javascript"></script>
-    <script src="readimage.js" type="text/javascript"></script>
-    <script src="exif.js" type="text/javascript"></script>
     <script src="rem.min.js" type="text/javascript"></script>
     <title>报修单</title>
 </head>
@@ -49,18 +47,11 @@
             <div class="form-group">
                 <label class="col-xs-3 control-label">图片</label>
                 <div class="col-xs-8">
-                    <label for="files_upload1" id="upload">
-                        <div class="btn btn-info">添加图片</div>
-                        <input type="file" accept="image/*" capture="camera" id="files_upload1" style="opacity: 0;width: 0;"/>
-                    </label>
+                    <div id="files_upload">+</div>
                 </div>
             </div>
             <div id="pictureInfo" class="showPlace">
-                <div id="place1" style="display: none;">
-                    <div>
-                        <img src="" style="width: 80%;" id="place1-img"/>
-                    </div>
-                </div>
+
             </div>
             <div class="form-group suBtn">
                 <div class="col-xs-offset-8">
@@ -70,4 +61,20 @@
         </form>
     </div>
 </body>
+<script type="text/javascript">
+    var img=$(".img");
+    var callBack=function(album){
+        //alert(album);
+        console.log(album);
+        console.log(img);
+        album.forEach(function(val,idx){
+            var div=$("<div></div>");
+            var img=$("<img width='80%'/>");
+            img.attr("src",val.data);
+            div.append(img);
+            $(".showPlace").append(div);
+        });
+    }
+    var carera=new $.Pgater($("#files_upload"),callBack);
+</script>
 </html>

@@ -12,3 +12,14 @@
 .formBox .btn-set{
     padding: 0.12rem 0.48rem;
 }
+.formBox .showPlace{
+    width: 100%;
+}
+#files_upload{
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.6rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid #000000;
+}
