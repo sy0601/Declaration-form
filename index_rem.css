@@ -12,13 +12,16 @@
 .formBox .btn-set{
     padding: 0.12rem 0.48rem;
 }
-.formBox .showPlace{
+.formBox .album{
     width: 100%;
+}
+.formBox .album img{
+    width: 2rem;
+    height: 2rem;
 }
 #files_upload{
     text-align: center;
     line-height: 0.8rem;
-    font-size: 0.6rem;
     width: 0.8rem;
     height: 0.8rem;
     border: 1px solid #000000;
